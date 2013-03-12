@@ -46,4 +46,43 @@ $letter--;
 $letter--;
 print "$letter\n";
 
+$sum = 2 ** 3;
+print "$sum\n";
+
+$sum = 2 ** 5;
+print "$sum\n";
+
+$sum = 2 ** -3;
+print "$sum\n";
+
+$sum = 10 % 3;
+print "$sum\n";
+
+$sum = 10 / 3;
+print "$sum\n";
+
+use integer;
+$sum = 10 / 3;
+print "$sum\n";
+
+$number = 10;
+if ($number == 10) {
+	print "10\n";
+}
+
+$number = 11;
+if ($number != 10) {
+	print "Not 10\n";
+}
+
+$word = "hello";
+if ($word eq "hello") {
+	print "hello\n";
+}
+
+$word = "helloa";
+if ($word ne "hello") {
+	print "Not hello\n";
+}
+
 exit;
