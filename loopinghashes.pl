@@ -22,5 +22,3 @@ foreach $value (values %hash) {
 }
 
 exit;
-
-
