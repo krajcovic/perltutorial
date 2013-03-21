@@ -7,6 +7,7 @@ use strict;
 use warnings;
 
 print "Content-type: text/html\n\n";
+chmod 0755, 'blockoftext.pl';
 
 print "A line of text<br>\n";
 print "Another line of text<br>\n";
