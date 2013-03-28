@@ -3,8 +3,8 @@
 #	Author: Dusan Krajcovic
 #
 
-use strict;
-use warnings;
+#use strict;
+#use warnings;
 
 print "Content-type: text/html\n\n";
 
@@ -32,7 +32,7 @@ $FirstTime = $FORM{'firsttime'};
 $Comments = $FORM{'comments'};
 $Store = $FORM{'store'};
 
-print <<EOF
+print <<EOF;
 Thankyou $Name!<br>
 Here is your order.<br>
 <br>
@@ -45,6 +45,5 @@ First Time Customer: $FirstTime<br>
 Comments: $Comments<br>
 Store: $Store<br>
 EOF
-
 
 exit;
