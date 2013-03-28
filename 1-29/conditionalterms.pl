@@ -23,7 +23,7 @@ if($a > $b)
 	print "$a je vetsi nez $b"; print "\n";
 }
 
-if($a = 0)
+if($a == 0)
 {
 	print "TRUE\n";
 } else {
