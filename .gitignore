@@ -16,8 +16,42 @@ MYMETA.yml
 nytprof.out
 pm_to_blib
 
+###Eclipse###
+
+*.pydevproject
+.project
+.metadata
+bin/**
+tmp/**
+tmp/**/*
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+.classpath
+.settings/
+.loadpath
+
+# External tool builders
+.externalToolBuilders/
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# CDT-specific
+.cproject
+
+# PDT-specific
+.buildpath
+
+
+
+
 
 file27-1.txt
 file27-2.txt
 file28.copied.txt
 file28.renamed.txt
+
+
