@@ -1,0 +1,18 @@
+HTTP/1.1 501 Method Not Implemented
+Date: Fri, 29 Mar 2013 19:30:02 GMT
+Server: Apache
+Allow: GET,HEAD,POST,OPTIONS
+Content-Length: 339
+Connection: close
+Content-Type: text/html; charset=iso-8859-1
+
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>501 Method Not Implemented</title>
+</head><body>
+<h1>Method Not Implemented</h1>
+<p>GET to /video/index.php not supported.<br />
+</p>
+<p>Additionally, a 404 Not Found
+error was encountered while trying to use an ErrorDocument to handle the request.</p>
+</body></html>
