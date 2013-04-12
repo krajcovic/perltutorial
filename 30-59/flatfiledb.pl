@@ -17,7 +17,7 @@ shift(@data);
 #print "<b>Countries of the World</b><br>\n";
 print "Countries of the World\n";
 
-my $oldname;
+my $oldname = "";
 
 foreach my $line (@data) {
 	chomp($line);
