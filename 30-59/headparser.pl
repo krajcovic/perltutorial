@@ -10,7 +10,7 @@ use v5.10;
 print "Content-type: text/html\n\n";
 
 use LWP::Simple;
-use HTTP::HeadParser;
+use Egg::Plugin::HTTP::HeadParser;
 
 my $url = get("http://www.scriptsocket.com");
 my $header = HTML::HeadParser->new;
