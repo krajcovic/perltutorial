@@ -14,7 +14,8 @@ print $cgi->header,
 
   $cgi->start_html(
 	-title => 'My Page Title',
-	-meta  => { 'keywords' => 'kw1, kw2', 'description' => 'My description.' },
+	-meta  => { 'keywords' => 'kw1, kw2',
+              'description' => 'My description.' },
 	-bgcolor => 'yellow',
 	-vlink   => 'orange'
   ),
@@ -26,6 +27,7 @@ print $cgi->header,
   $cgi->img( { -src => 'fish.jpeg', -alt => 'A fish' } ),
   $cgi->br, "\n",
   $cgi->a( { -href => 'http://www.scriptsocket.com/', -target => '_blink'}, "ScriptSocket.com" ),
+
   $cgi->end_html;
 
 exit;

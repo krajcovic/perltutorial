@@ -29,6 +29,7 @@ foreach my $line (@data) {
 	) = split( /\,/, $line );
 
 	if ( $name ne $oldname ) {
+
 		#print "<br><b>$name</b><br>";
 		#print "$alpha2 ($alpha3)<br>\n";
 		print "$name\n";
