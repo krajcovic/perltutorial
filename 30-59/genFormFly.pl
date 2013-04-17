@@ -42,6 +42,25 @@ print $cgi->header,
   ),
   $cgi->br, "\n",
 
+  "Scrollbox: ",
+  $cgi->scrolling_list(
+	-name     => 'scrollbox',
+	-size     => 1,
+	-value    => [ 'Hat', 'Coat', 'Jacket' ],
+	-defaults => ['Jacket']
+  ),
+  $cgi->br, "\n",
+
+  "Commetns: ", $cgi->br, "\n",
+  $cgi->textarea( -name => 'textarea', -columns => 20, -rows => 5 ), $cgi->br,
+  "\n",
+
+  $cgi->hidden( -name => 'hidden', -value => 'Toys' ), "\n",
+
+  $cgi->submit( -value => 'Submit' ), "\n", $cgi->reset, "\n",
+  
+  $cgi->end_form,
+
   $cgi->end_html;
 
 exit;
