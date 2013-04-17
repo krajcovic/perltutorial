@@ -16,7 +16,7 @@ print $cgi->header,
 
   $cgi->start_form(
 	-method => 'post',
-	-action => 'http://www.yourserver.com/cgi-bin/script.cgi'
+	-action => ''
   ),
   "\n",
 
@@ -58,9 +58,20 @@ print $cgi->header,
   $cgi->hidden( -name => 'hidden', -value => 'Toys' ), "\n",
 
   $cgi->submit( -value => 'Submit' ), "\n", $cgi->reset, "\n",
-  
-  $cgi->end_form,
 
-  $cgi->end_html;
+  $cgi->end_form;
+
+#results
+print "<br>\n";
+
+foreach ($cgi->param) {
+	&printParam($_);
+}
 
 exit;
+
+sub printParam() {
+	if ( $cgi->param( $_[0] ) ) {
+		print "$_[0]: ", $cgi->param( $_[0] ), $cgi->br, "\n";
+	}
+}
